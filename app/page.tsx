@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { getProducts } from '@/lib/shopify';
 import ProductCard from '@/components/ProductCard';
 import EmailCapture from '@/components/EmailCapture';
+import SocialProof from '@/components/SocialProof';
 
 export const revalidate = 60;
 
@@ -187,6 +188,9 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Social Proof */}
+      <SocialProof />
 
       {/* Email Capture */}
       <EmailCapture />

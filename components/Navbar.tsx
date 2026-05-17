@@ -15,7 +15,7 @@ export default function Navbar() {
           <Link href="/collections/performance" className="text-sm tracking-wider text-white/70 hover:text-white transition-colors uppercase">Performance</Link>
           <Link href="/products" className="text-sm tracking-wider text-white/70 hover:text-white transition-colors uppercase">Shop All</Link>
           <Link href="/story" className="text-sm tracking-wider text-white/70 hover:text-white transition-colors uppercase">Story</Link>
-          <Link href="/about" className="text-sm tracking-wider text-white/70 hover:text-white transition-colors uppercase">About</Link>
+          <Link href="/blog" className="text-sm tracking-wider text-white/70 hover:text-white transition-colors uppercase">Field Notes</Link>
           <Link href="/products" className="bg-[#C9A84C] text-black px-5 py-2 text-sm tracking-wider uppercase hover:bg-[#b8913d] transition-colors font-semibold">
             Shop Now
           </Link>

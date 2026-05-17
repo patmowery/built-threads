@@ -31,8 +31,11 @@ export default function Footer() {
           <div>
             <div className="text-xs tracking-widest uppercase text-white/30 mb-4">Shop</div>
             <div className="flex flex-col gap-2.5">
+              <Link href="/collections/builders" className="text-sm text-white/50 hover:text-white transition-colors">Builder&apos;s Collection</Link>
+              <Link href="/collections/performance" className="text-sm text-white/50 hover:text-white transition-colors">Performance Series</Link>
               <Link href="/products" className="text-sm text-white/50 hover:text-white transition-colors">All Products</Link>
-              <Link href="/about" className="text-sm text-white/50 hover:text-white transition-colors">Our Story</Link>
+              <Link href="/bundles" className="text-sm text-white/50 hover:text-white transition-colors">Bundle Deals</Link>
+              <Link href="/blog" className="text-sm text-white/50 hover:text-white transition-colors">The Field Notes</Link>
             </div>
           </div>
           <div>
