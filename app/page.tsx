@@ -15,8 +15,9 @@ export default async function HomePage() {
     <>
       {/* Hero — Full-bleed lifestyle image */}
       <section className="relative min-h-screen flex items-end overflow-hidden">
-        {/* Background image */}
+        {/* Background: video hero with image fallback */}
         <div className="absolute inset-0">
+          {/* Fallback image — shows while video loads or if video unsupported */}
           <Image
             src="/hero/hero-01-jobsite.png"
             alt="Built Threads — Wear What You've Earned"
@@ -25,7 +26,17 @@ export default async function HomePage() {
             priority
             sizes="100vw"
           />
-          {/* Gradient overlay: dark at bottom for copy legibility, subtle at top */}
+          {/* Video overlay — autoplay muted loop */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="/hero/hero-01-jobsite.png"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          >
+            <source src="/video/hero.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/40 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/60 via-transparent to-transparent" />
         </div>
