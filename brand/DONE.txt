@@ -1,0 +1,10 @@
+BUILT THREADS brand identity complete.
+Generated: 2026-05-17
+File: brand-identity.json
+
+Contents:
+- Full brand identity (name, tagline, manifesto, voice, palette, typography, logo)
+- Homepage copy (hero, section 2, about)
+- 5 product descriptions with SEO copy and tags
+- 5 hero lifestyle image prompts (diverse models)
+- 20 product mockup prompts (4 per product: flat lay, on-model, lifestyle, detail)

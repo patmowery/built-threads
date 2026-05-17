@@ -1,0 +1,118 @@
+{
+  "brand": {
+    "name": "BUILT THREADS",
+    "tagline": "Wear What You've Earned.",
+    "manifesto": "Most people are waiting. Waiting for permission. Waiting for the right moment. Waiting for someone to hand them the life they want. BUILT THREADS isn't made for those people.\n\nThis is for the ones who woke up one day and decided to stop asking. Who understood that nobody is coming — that the work, the sacrifice, the discipline, all of it lands on you and only you. That's not a burden. That's freedom.\n\nWe make clothing for builders. Not the idea of building — the actual thing. The 5am alarm. The cold calls. The failed reps. The failed launches. The getting-back-up. If that's your life, this is your uniform.\n\nBUILT THREADS. Not inherited. Not stumbled into. Built — rep by rep, day by day, decision by decision. Wear what you've earned.",
+    "voice": {
+      "tone": "Unapologetic, direct, earned. Speaks like a mentor who's been through the fire — not preachy, not toxic, just real. Every word pulls weight. No inspiration porn. Just truth.",
+      "vocabulary": ["build", "earn", "grind", "silence", "reality", "discipline", "hard", "own", "decide", "execute", "forged", "rep", "fuel", "edge", "output", "bet on yourself", "no excuses"],
+      "avoid": ["amazing", "journey", "hustle culture", "vibe", "blessed", "manifesting", "just believe", "tribe", "community-driven", "inclusive", "passion", "authentic", "game-changer", "disruptive", "synergy", "empower"]
+    },
+    "palette": {
+      "primary": "#0A0A0A",
+      "secondary": "#1A1A1A",
+      "accent": "#C9A84C",
+      "background": "#0D0D0D",
+      "text": "#F0F0F0"
+    },
+    "typography": {
+      "display": "Bebas Neue",
+      "body": "Space Grotesk",
+      "accent": "Oswald"
+    },
+    "logo": {
+      "concept": "All-caps wordmark — BUILT THREADS set in Bebas Neue, tightly tracked. The word BUILT sits above THREADS in a stacked layout, BUILT in larger point size with a thin horizontal rule separating the two words. Clean, no-nonsense, typographic. Optional stamp variant: a circular badge with BUILT THREADS around the perimeter and a minimal geometric anvil or block shape at center.",
+      "primary_text": "BUILT / THREADS — stacked, all caps, Bebas Neue, gold accent on the rule separator",
+      "symbol": "Optional secondary mark: a solid geometric square with one corner broken off — representing something being built, incomplete by design, always in progress."
+    }
+  },
+  "copy": {
+    "homepage_hero_headline": "NO ONE IS COMING TO SAVE YOU.",
+    "homepage_hero_subline": "Stop waiting. Start building. Wear what you've earned.",
+    "homepage_hero_cta": "SHOP THE LINE",
+    "homepage_section_2_headline": "Clothing Built for Builders.",
+    "homepage_section_2_body": "These aren't motivational quotes slapped on a shirt. These are statements of fact — for the people who live by them. Premium heavyweight cotton. Bold type. Zero apology. If you're out here doing the work, you know what these words mean.",
+    "about_headline": "We Don't Make Clothing for Everyone.",
+    "about_body": "BUILT THREADS started with a simple observation: most 'motivational' brands are selling a fantasy. Feel-good phrases for people who want to look like they're grinding without actually doing it. We wanted no part of that.\n\nWe make apparel for a specific kind of person. The one who's up before everyone else. The entrepreneur on their third rebuild. The athlete who treats rest days like a discipline, not a reward. The person who's read enough self-help books to know that nothing replaces showing up.\n\nEvery design we release is a statement — not an aspiration. You don't buy a BUILT THREADS shirt hoping someday you'll earn it. You buy it because you already have. Because the words on your chest aren't a goal. They're a description.\n\nThat's the standard. We hold it. You hold it. That's the whole brand.",
+    "shipping_promise": "Ships within 48 hours. Tracked. No excuses, no delays — we treat our operation the same way we expect you to treat yours.",
+    "quality_promise": "Heavyweight 100% ring-spun cotton. Pre-shrunk. Designed to hold its shape and its statement for years. We don't cut corners on materials because you don't cut corners on the work."
+  },
+  "products": [
+    {
+      "title": "BUILD YOUR OWN REALITY",
+      "price": 39.99,
+      "description": "The world is going to tell you what's possible. Ignore it. This shirt is for the ones who stopped asking for permission and started making decisions. Your reality is under construction — get to work.",
+      "seo_description": "BUILD YOUR OWN REALITY premium heavyweight graphic tee by BUILT THREADS. Bold mindset apparel for entrepreneurs, athletes, and builders. 100% ring-spun cotton, unisex fit. Free shipping on orders over $75.",
+      "tags": ["mindset", "entrepreneur", "builder", "motivational", "premium tee", "heavyweight", "build", "reality", "self-made"]
+    },
+    {
+      "title": "NO ONE IS COMING TO SAVE YOU",
+      "price": 39.99,
+      "description": "The hardest truth is also the most freeing one. No rescue. No cavalry. Just you, the problem, and the decision of what to do next. Wear it like a reminder. Wear it like a warning.",
+      "seo_description": "NO ONE IS COMING TO SAVE YOU premium graphic tee by BUILT THREADS. Bold motivational apparel for high performers and self-starters. Heavyweight ring-spun cotton. Statement tee for entrepreneurs and athletes.",
+      "tags": ["accountability", "self-reliance", "entrepreneur", "mindset", "motivational", "bold", "premium tee", "no excuses", "builder"]
+    },
+    {
+      "title": "BUILT NOT BORN",
+      "price": 34.99,
+      "description": "Talent is a head start. Discipline is the whole race. You weren't handed this — you built it, one hard day at a time. This shirt says what your results already show.",
+      "seo_description": "BUILT NOT BORN premium graphic tee by BUILT THREADS. Motivational apparel for grinders and self-made individuals. Heavyweight cotton, bold typography. Perfect for gym, work, or everyday wear.",
+      "tags": ["built not born", "self-made", "discipline", "gym", "athlete", "mindset", "grind", "premium tee", "builder"]
+    },
+    {
+      "title": "THE GRIND IS THE GIFT",
+      "price": 34.99,
+      "description": "Everyone wants the result. Almost nobody wants what it actually takes. But you've been there — in the early mornings, the late nights, the sessions where nothing clicked. And somehow, that became the best part. The grind isn't the price you pay. It's what you get.",
+      "seo_description": "THE GRIND IS THE GIFT premium graphic tee by BUILT THREADS. Heavyweight motivational apparel for athletes and entrepreneurs. Bold minimalist design. Celebrates the process, not just the outcome.",
+      "tags": ["grind", "process", "discipline", "gym", "entrepreneur", "athlete", "mindset", "premium tee", "work ethic"]
+    },
+    {
+      "title": "SILENCE IS A SUPERPOWER",
+      "price": 34.99,
+      "description": "Stop announcing. Stop explaining. Stop defending. Let the output speak. The most dangerous builders in the room are the quiet ones — head down, stacking results, saying nothing. This shirt is for them.",
+      "seo_description": "SILENCE IS A SUPERPOWER premium graphic tee by BUILT THREADS. Bold mindset apparel for focused builders and high performers. Heavyweight cotton, clean typography. For the ones who let results do the talking.",
+      "tags": ["silence", "focus", "discipline", "mindset", "entrepreneur", "premium tee", "builder", "execute", "results"]
+    }
+  ],
+  "image_prompts": {
+    "hero_images": [
+      "Cinematic lifestyle photograph, dark moody studio setting with dramatic side lighting, a Black man in his early 30s with a lean athletic build wearing a black heavyweight graphic tee, jaw set, eyes forward, expression calm and absolutely certain. Background is raw concrete wall with subtle industrial texture. Low key lighting, single strong key light from camera left casting deep shadows. Shot on 85mm, shallow depth of field. Gold accent light rim on right shoulder. Mood: controlled power.",
+      "Outdoor pre-dawn lifestyle photo, a Latina woman mid-30s, athletic, wearing a dark premium graphic tee and joggers, standing on a rooftop overlooking a city skyline just before sunrise. She is looking out at the city, not at camera. City lights below, sky deep navy-to-orange gradient. Backlit silhouette with warm city glow catching her profile. Shot wide angle, 24mm. Mood: quiet ambition, the world before everyone wakes up.",
+      "Gritty gym environment, raw concrete floors, exposed brick, industrial fluorescent lighting. A white man late 20s, heavily built, chalk on his hands, sitting on a weight bench mid-rest. Wearing black graphic tee. Staring directly into camera, no smile, completely focused. Sweat visible. Shot at eye level, 50mm. High contrast, desaturated slightly except for skin tones. Mood: earned exhaustion, not done yet.",
+      "Minimalist studio editorial shot, an Asian man early 30s, clean-cut but with an intensity in his expression, wearing a black premium tee tucked into dark trousers. Standing against a pure black background. Shot straight-on, 85mm, perfectly even lighting that reveals every detail of the fabric. Hands clasped in front, posture straight, expression like he's already made the decision. Mood: discipline, precision, readiness.",
+      "Documentary-style lifestyle photo, a Black woman late 20s, natural hair, athletic but not overdone, sitting at a minimal desk with a laptop open, wearing a black graphic tee. Apartment at golden hour, warm light from one window catching her face as she looks up from her screen. Expression: focused, alive, building something. Shot 35mm, slightly wide. Background slightly blurred. No props beyond laptop. Mood: the builder in her natural habitat."
+    ],
+    "product_mockups": {
+      "BUILD YOUR OWN REALITY": [
+        "Premium flat lay product photograph of a black heavyweight graphic tee reading BUILD YOUR OWN REALITY in bold white Bebas Neue type, laid on a dark slate surface with subtle texture. Single hero light from above-left creating soft shadows. Shot directly overhead, perfectly centered. Gold pen or notebook edge just barely visible at frame corner for lifestyle context. No wrinkles, perfectly styled. Editorial quality.",
+        "Front-on on-model shot of a Hispanic man early 30s, athletic build, wearing a black BUILD YOUR OWN REALITY graphic tee. Neutral dark background, slight vignette. Shot 85mm at chest height. Arms relaxed at sides, expression direct and composed. Lighting: soft box camera-left, subtle rim light right. Shows full shirt front, clean and minimal.",
+        "Lifestyle shot — man in his late 20s, mixed race, wearing the BUILD YOUR OWN REALITY tee while walking through an urban environment, early morning, city street. Motion blur in background, subject sharp. Shot from slightly low angle looking up. Confidence in stride, not looking at camera. Golden hour light. Cinematic crop.",
+        "Detail and close-up shot of the BUILD YOUR OWN REALITY graphic — extreme close up of the typography on chest of the shirt, worn on model. Shallow depth of field, only center letters in perfect focus. Shot macro, shows fabric quality and print detail. Dramatic side lighting to show texture of heavyweight cotton weave. Gold accent detail in image composition."
+      ],
+      "NO ONE IS COMING TO SAVE YOU": [
+        "Premium flat lay of black heavyweight tee reading NO ONE IS COMING TO SAVE YOU in bold all-caps white typography, laid on rough black brushed concrete surface. Overhead shot, single dramatic top light. Minimal styling — shirt alone, no props. Slight tension in the fold of the fabric for texture. Editorial product photography.",
+        "Front-on on-model, Black woman late 20s, fit and composed, wearing the NO ONE IS COMING TO SAVE YOU tee. Arms crossed, expression absolutely calm and certain. Dark neutral background. Shot 85mm, soft lighting with strong shadow on one side. Shows attitude, not aggression. Clean composition.",
+        "Lifestyle shot — a man in his early 30s (South Asian, athletic) wearing the tee during an outdoor workout, doing pull-ups on an urban fitness station at dawn. Backlit by rising sun, dark silhouette with warm edge light. Dynamic composition, shot from low angle looking up. Gritty and raw.",
+        "Close-up detail of NO ONE IS COMING TO SAVE YOU text printed on premium black fabric. Macro lens, subject: the period at the end of the statement. Typography crisp and bold, fabric texture visible. Extremely tight crop. Dramatic directional lighting from one side. Communicates permanence and weight."
+      ],
+      "BUILT NOT BORN": [
+        "Flat lay product shot of black graphic tee reading BUILT NOT BORN on dark charcoal textured surface. Shot overhead with soft diffuse lighting. Shirt perfectly pressed and styled. Minimal — tee only, no accessories. Clean shadows. Premium editorial quality, focus on simplicity and craftsmanship.",
+        "On-model front shot of a white man mid-30s, powerlifter build, wearing the BUILT NOT BORN tee. Shot in gym setting against brick wall. Arms at sides, standing tall. Lighting: dramatic overhead industrial fluorescent that creates strong shadows under jawline and shoulders. Expression: settled. Knows exactly who he is.",
+        "Lifestyle shot — a Black woman early 30s, runner's build, wearing BUILT NOT BORN tee post-workout, cooling down in a park at sunrise. She's seated on a bench, water bottle beside her, looking off into the distance. Natural warm morning light. Candid feel, shot 35mm. Tells a story of earned rest.",
+        "Detail close-up of BUILT NOT BORN graphic — tight crop on the word BUILT in large display type across the chest of a worn tee. Visible gym chalk on the hands of the model just entering frame at bottom. Harsh side lighting emphasizes fabric texture and the weight of the letters. Gritty, real."
+      ],
+      "THE GRIND IS THE GIFT": [
+        "Flat lay of THE GRIND IS THE GIFT graphic tee on matte black surface with a worn leather journal and a cold brew coffee just entering frame at edge. Overhead shot, warm editorial lighting. Shirt centered, accessories supporting without distracting. Premium lifestyle feel. Shot 50mm equivalent, square crop.",
+        "On-model front-on shot — a Latina woman late 20s, strong and composed, wearing the tee in a home office setting. Bookshelves slightly blurred behind her. Soft window light from side. Expression: in the work, unbothered. This isn't a photoshoot moment — it's Tuesday. Full shirt visible, minimal styling.",
+        "Lifestyle shot — a man in his early 30s (Middle Eastern descent, athletic) wearing THE GRIND IS THE GIFT tee while running stadium stairs at dusk. Motion blur on legs, upper body and shirt sharp. Shot from low angle, stadium lights in background. Cinematic. The work never looks glamorous from outside but feels like everything from inside.",
+        "Close-up detail — the word GIFT in large display type on THE GRIND IS THE GIFT tee, tight crop. Model's hand resting over it, deliberate. Dark, moody lighting. Single key light. The image asks: what's your gift? Textural, contemplative, strong."
+      ],
+      "SILENCE IS A SUPERPOWER": [
+        "Flat lay of SILENCE IS A SUPERPOWER tee on black marble surface. Pure overhead shot, perfectly centered. No props — shirt alone. The emptiness of the composition mirrors the message. Single soft light. Premium feel, absolute restraint. The most minimal of all product shots.",
+        "On-model front shot — an Asian woman early 30s, sharp expression, wearing the tee. Studio backdrop, pure black. She is not smiling. She is not performing for the camera. She is simply there, fully present. Shot 85mm, perfectly even lighting with slight falloff to edges. Power in stillness.",
+        "Lifestyle shot — a Black man late 20s, wearing the SILENCE IS A SUPERPOWER tee, walking through a crowded city street. He is the only thing in focus. Everyone around him blurred in motion. He moves through the noise untouched. Shot from front at eye level, 35mm. High contrast. He's in the world but not of it.",
+        "Detail close-up of SILENCE IS A SUPERPOWER — tight on the word SILENCE across the chest. Model is exhaling slowly, you can barely see the chest expand in the stillness. Shot from slight above. The only light is a single narrow strip from above, catching the top of the letters. The rest is shadow. The image is quiet. The image is loud."
+      ]
+    }
+  }
+}
