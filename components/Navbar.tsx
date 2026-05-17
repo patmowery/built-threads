@@ -11,7 +11,8 @@ export default function Navbar() {
           BUILT THREADS
         </Link>
         <div className="hidden md:flex items-center gap-8">
-          <Link href="/collections/builders" className="text-sm tracking-wider text-white/70 hover:text-white transition-colors uppercase">Collection</Link>
+          <Link href="/collections/builders" className="text-sm tracking-wider text-white/70 hover:text-white transition-colors uppercase">Builder&apos;s</Link>
+          <Link href="/collections/performance" className="text-sm tracking-wider text-white/70 hover:text-white transition-colors uppercase">Performance</Link>
           <Link href="/products" className="text-sm tracking-wider text-white/70 hover:text-white transition-colors uppercase">Shop All</Link>
           <Link href="/story" className="text-sm tracking-wider text-white/70 hover:text-white transition-colors uppercase">Story</Link>
           <Link href="/about" className="text-sm tracking-wider text-white/70 hover:text-white transition-colors uppercase">About</Link>
@@ -30,7 +31,8 @@ export default function Navbar() {
       </div>
       {open && (
         <div className="md:hidden bg-[#0a0a0a] border-t border-white/10 px-6 py-6 flex flex-col gap-5">
-          <Link href="/collections/builders" className="text-sm tracking-wider uppercase text-white/80" onClick={() => setOpen(false)}>Collection</Link>
+          <Link href="/collections/builders" className="text-sm tracking-wider uppercase text-white/80" onClick={() => setOpen(false)}>Builder&apos;s Collection</Link>
+          <Link href="/collections/performance" className="text-sm tracking-wider uppercase text-white/80" onClick={() => setOpen(false)}>Performance Series</Link>
           <Link href="/products" className="text-sm tracking-wider uppercase text-white/80" onClick={() => setOpen(false)}>Shop All</Link>
           <Link href="/story" className="text-sm tracking-wider uppercase text-white/80" onClick={() => setOpen(false)}>Story</Link>
           <Link href="/about" className="text-sm tracking-wider uppercase text-white/80" onClick={() => setOpen(false)}>About</Link>
