@@ -24,7 +24,7 @@ export interface ShopifyProduct {
 export async function getProducts(): Promise<ShopifyProduct[]> {
   try {
     const res = await fetch(
-      `https://${SHOPIFY_STORE}/admin/api/2026-04/products.json?published_status=published&limit=50`,
+      `https://${SHOPIFY_STORE}/admin/api/2026-04/products.json?published_status=any&limit=50`,
       {
         headers: { 'X-Shopify-Access-Token': SHOPIFY_ADMIN_TOKEN },
         next: { revalidate: 60 },
