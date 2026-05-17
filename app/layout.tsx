@@ -4,8 +4,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Built Threads — Premium Apparel",
-  description: "Premium apparel built for those who move with purpose.",
+  title: "Built Threads — Wear What You've Earned.",
+  description: "Apparel for the ones who are already doing the work. Built not borrowed. Earned not given.",
 };
 
 export default function RootLayout({

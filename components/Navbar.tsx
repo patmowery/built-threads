@@ -7,13 +7,13 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/95 backdrop-blur border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-        <Link href="/" className="font-display text-2xl tracking-widest text-white hover:text-[#c41e1e] transition-colors">
+        <Link href="/" className="font-display text-2xl tracking-widest text-white hover:text-[#C9A84C] transition-colors">
           BUILT THREADS
         </Link>
         <div className="hidden md:flex items-center gap-8">
           <Link href="/products" className="text-sm tracking-wider text-white/80 hover:text-white transition-colors uppercase">Shop</Link>
           <Link href="/about" className="text-sm tracking-wider text-white/80 hover:text-white transition-colors uppercase">About</Link>
-          <Link href="/products" className="bg-[#c41e1e] text-white px-5 py-2 text-sm tracking-wider uppercase hover:bg-red-700 transition-colors">
+          <Link href="/products" className="bg-[#C9A84C] text-black px-5 py-2 text-sm tracking-wider uppercase hover:bg-[#b8913d] transition-colors font-semibold">
             Shop Now
           </Link>
         </div>
