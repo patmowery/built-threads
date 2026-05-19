@@ -17,7 +17,7 @@ interface Product {
   id: number;
   title: string;
   body_html: string;
-  images: { src: string; alt: string }[];
+  images: { src: string; alt: string; variant_ids?: number[] }[];
   variants: Variant[];
   options: { name: string; values: string[] }[];
 }
@@ -36,18 +36,48 @@ export default function ProductPage() {
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
   const [selectedVariant, setSelectedVariant] = useState<Variant | null>(null);
+  const [selectedOptions, setSelectedOptions] = useState<Record<string, string>>({});
   const [activeImage, setActiveImage] = useState(0);
 
   useEffect(() => {
     fetch(`/api/products/${handle}`)
       .then(r => r.json())
       .then(data => {
-        setProduct(data.product);
-        setSelectedVariant(data.product?.variants?.[0] || null);
+        const p = data.product;
+        setProduct(p);
+        if (p?.variants?.[0]) {
+          const first = p.variants[0];
+          const opts: Record<string, string> = {};
+          p.options?.forEach((opt: { name: string }, i: number) => {
+            const val = [first.option1, first.option2, first.option3][i];
+            if (val) opts[opt.name] = val;
+          });
+          setSelectedOptions(opts);
+          setSelectedVariant(first);
+        }
         setLoading(false);
       })
       .catch(() => setLoading(false));
   }, [handle]);
+
+  function selectOption(optionName: string, value: string, p: Product) {
+    const newOpts = { ...selectedOptions, [optionName]: value };
+    setSelectedOptions(newOpts);
+    // Find variant matching all selected options
+    const match = p.variants.find(v => {
+      return p.options.every((opt, i) => {
+        const selected = newOpts[opt.name];
+        const variantVal = [v.option1, v.option2, v.option3][i];
+        return !selected || variantVal === selected;
+      });
+    });
+    if (match) {
+      setSelectedVariant(match);
+      // Swap to matching variant image if available
+      const imgIdx = p.images.findIndex(img => img.variant_ids?.includes(match.id));
+      if (imgIdx >= 0) setActiveImage(imgIdx);
+    }
+  }
 
   if (loading) return (
     <div className="max-w-7xl mx-auto px-4 pt-28 pb-20">
@@ -139,7 +169,7 @@ export default function ProductPage() {
             <div className="w-full h-px bg-white/10 mb-6" />
 
             {/* Size options */}
-            {product.options?.map(option => (
+            {product.options?.map((option, optIdx) => (
               <div key={option.name} className="mb-6">
                 <div className="flex items-center justify-between mb-3">
                   <p className="text-xs tracking-[0.2em] uppercase text-white/50">{option.name}</p>
@@ -151,21 +181,24 @@ export default function ProductPage() {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {option.values.map(value => {
-                    const variant = product.variants.find(v => v.option1 === value);
-                    const isSelected = selectedVariant?.option1 === value;
-                    const isAvailable = variant?.available !== false;
+                    const isSelected = selectedOptions[option.name] === value;
+                    // Check if any variant with this option value is available
+                    const hasAvailable = product.variants.some(v => {
+                      const variantVal = [v.option1, v.option2, v.option3][optIdx];
+                      return variantVal === value && v.available !== false;
+                    });
                     return (
                       <button
                         key={value}
-                        onClick={() => variant && isAvailable && setSelectedVariant(variant)}
+                        onClick={() => hasAvailable && selectOption(option.name, value, product)}
                         className={`px-4 py-2.5 text-sm tracking-wider border transition-all ${
                           isSelected
                             ? 'border-[#C9A84C] bg-[#C9A84C] text-black font-semibold'
-                            : isAvailable
+                            : hasAvailable
                               ? 'border-white/20 text-white hover:border-white/60'
                               : 'border-white/10 text-white/20 cursor-not-allowed line-through'
                         }`}
-                        disabled={!isAvailable}
+                        disabled={!hasAvailable}
                       >
                         {value}
                       </button>

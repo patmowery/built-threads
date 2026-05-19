@@ -9,7 +9,7 @@ export interface ShopifyProduct {
   vendor: string;
   product_type: string;
   tags: string;
-  images: { id: number; src: string; alt: string }[];
+  images: { id: number; src: string; alt: string; variant_ids: number[] }[];
   variants: {
     id: number;
     title: string;
