@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { useCart } from '@/lib/cart-context';
 
 interface Variant {
   id: number;
@@ -104,9 +105,21 @@ export default function ProductPage() {
     </div>
   );
 
-  const checkoutUrl = selectedVariant
-    ? `https://xmehii-zm.myshopify.com/cart/${selectedVariant.id}:1`
-    : '#';
+  const { addItem } = useCart();
+
+  function handleAddToCart() {
+    if (!selectedVariant || !product) return;
+    addItem({
+      variantId: selectedVariant.id,
+      productId: product.id,
+      title: product.title,
+      variantTitle: [selectedVariant.option1, selectedVariant.option2].filter(Boolean).join(' / '),
+      price: selectedVariant.price,
+      quantity: 1,
+      imageSrc: product.images?.[0]?.src,
+      handle: handle,
+    });
+  }
 
   const descriptionText = product.body_html ? stripHtml(product.body_html) : '';
 
@@ -210,12 +223,13 @@ export default function ProductPage() {
             ))}
 
             {/* CTA */}
-            <a
-              href={checkoutUrl}
-              className="block w-full bg-[#C9A84C] text-black text-center py-4 text-sm tracking-[0.25em] uppercase font-bold hover:bg-[#b8913d] transition-colors mb-3"
+            <button
+              onClick={handleAddToCart}
+              disabled={!selectedVariant}
+              className="block w-full bg-[#C9A84C] text-black text-center py-4 text-sm tracking-[0.25em] uppercase font-bold hover:bg-[#b8913d] transition-colors mb-3 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               ADD TO CART — {selectedVariant ? formatPrice(selectedVariant.price) : ''}
-            </a>
+            </button>
 
             {/* Trust signals */}
             <div className="flex items-center justify-center gap-6 text-white/30 text-xs tracking-widest uppercase py-3 border-y border-white/5 mb-6">
